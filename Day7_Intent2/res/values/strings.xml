@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">intent</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_moogle1">Moogle1</string>
+    <string name="title_activity_moogle2">Moogle2</string>
+    <string name="call_moogle2">請求支援</string>
+    <string name="request_moogle1">我來也！</string>
+
+</resources>
