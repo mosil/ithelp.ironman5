@@ -14,13 +14,13 @@ public class SecondActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-        
+        Log.d("Second", "onCreate");
         Button btnMain = (Button)findViewById(R.id.btn_second);
         btnMain.setOnClickListener(new Button.OnClickListener(){
     		public void onClick(View v) {
     			Intent intent = new Intent(SecondActivity.this, MainActivity.class);
     			startActivity(intent);
-    			Log.d("Second", "onCreate");
+    			
     		}
         });
     }
@@ -57,6 +57,7 @@ public class SecondActivity extends Activity {
     
     @Override
     protected void onDestroy() {
+    	super.onDestroy();
     	Log.d("Second", "onDestroy");
     }
 }

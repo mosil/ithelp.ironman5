@@ -55,6 +55,7 @@ public class MainActivity extends Activity {
     
     @Override
     protected void onDestroy() {
+    	super.onDestroy();
     	Log.d("Main", "onDestroy");
     }
 }
