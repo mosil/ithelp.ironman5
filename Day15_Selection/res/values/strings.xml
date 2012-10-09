@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="app_name">Day15_選擇</string>
+    <string name="title_activity_moogle">莫古哩</string>
+    <string name="title_activity_chocobo">陸行鳥</string>
+    <string-array name="Signal">
+        <item >壹</item>
+        <item >貮</item>
+        <item >參</item>
+        <item >肆</item>
+        <item >伍</item>
+        <item >陸</item>
+        <item >柒</item>
+        <item >捌</item>
+        <item >玖</item>
+        <item >拾</item>
+    </string-array>
+    <string name="show">呈現</string>
+    <string name="back">返回</string>
+    <string name="send_code">傳遞代碼</string>
+    <string name="send_context">傳遞內容</string>
+    <string name="send">傳送</string>
+
+</resources>

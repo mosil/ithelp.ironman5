@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/rdg_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rdo_tw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="正體中文" />
+
+        <RadioButton
+            android:id="@+id/rdo_jp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日本語" />
+
+        <RadioButton
+            android:id="@+id/rdo_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English" />
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spn_chocobo_signal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_show_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back" />
+    </LinearLayout>
+
+</LinearLayout>
