@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btn_show_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="點將" />
+
+        <Button
+            android:id="@+id/btn_back_to_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人數：" />
+
+        <TextView
+            android:id="@+id/txt_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/chk_sephiroth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="賽飛羅斯" />
+
+    <CheckBox
+        android:id="@+id/chk_kefka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卡夫卡" />
+
+    <CheckBox
+        android:id="@+id/chk_exdeath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="艾克德斯" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/ll_moogles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
