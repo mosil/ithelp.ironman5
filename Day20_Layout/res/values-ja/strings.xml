@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Day20_選択する</string>
+    <string name="title_activity_moogle">モーグリ</string>
+    <string name="title_activity_chocobo">チョコボ</string>
+    <string-array name="Signal">
+        <item >いち</item>
+        <item >に</item>
+        <item >さん</item>
+        <item >し</item>
+        <item >ご</item>
+        <item >ろく</item>
+        <item >しち</item>
+        <item >はち</item>
+        <item >きゅう</item>
+        <item >じゅう</item>
+    </string-array>
+</resources>

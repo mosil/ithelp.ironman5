@@ -1,0 +1,50 @@
+<resources>
+
+    <string name="app_name">Day20_佈景</string>
+    <string name="title_activity_moogle">莫古哩</string>
+    <string name="title_activity_chocobo">陸行鳥</string>
+
+    <string-array name="Signal">
+        <item>壹</item>
+        <item>貮</item>
+        <item>參</item>
+        <item>肆</item>
+        <item>伍</item>
+        <item>陸</item>
+        <item>柒</item>
+        <item>捌</item>
+        <item>玖</item>
+        <item>拾</item>
+    </string-array>
+
+    <string name="show">呈現</string>
+    <string name="back">返回</string>
+    <string name="send_code">傳遞代碼</string>
+    <string name="send_context">傳遞內容</string>
+    <string name="send">傳送</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_moogle2">莫古里</string>
+    <string-array name="moogles">
+        <item>Moogle11</item>
+        <item>Moogle12</item>
+        <item>Moogle13</item>
+        <item>Moogle14</item>
+        <item>Moogle15</item>
+        <item>Moogle16</item>
+        <item>Moogle17</item>
+        <item>Moogle18</item>
+        <item>Moogle19</item>
+        <item>Moogle20</item>
+        <item>Moogle21</item>
+        <item>Moogle22</item>
+        <item>Moogle23</item>
+        <item>Moogle24</item>
+        <item>Moogle25</item>
+        <item>Moogle26</item>
+        <item>Moogle27</item>
+        <item>Moogle28</item>
+        <item>Moogle29</item>
+        <item>Moogle30</item>
+    </string-array>
+</resources>
