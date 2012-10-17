@@ -131,6 +131,7 @@ public class Moogle2Activity extends Activity {
 				case R.id.menu_moogle:
 					Intent intent = new Intent(this, Moogle3Activity.class);
 					startActivity(intent);
+					finish();
 					break;
 			}
 		    //這一行一定不能少

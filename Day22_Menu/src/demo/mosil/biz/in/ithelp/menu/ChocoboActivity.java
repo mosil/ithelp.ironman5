@@ -130,6 +130,7 @@ public boolean onOptionsItemSelected(MenuItem item) {
 		case Menu.FIRST:
 			Intent intent = new Intent(this, Moogle3Activity.class);
 			startActivity(intent);
+			finish();
 			break;
 	}
     //這一行一定不能少
