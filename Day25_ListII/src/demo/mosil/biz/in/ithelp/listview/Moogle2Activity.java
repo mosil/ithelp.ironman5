@@ -1,8 +1,8 @@
-package demo.mosil.biz.in.ithelp.communication;
+package demo.mosil.biz.in.ithelp.listview;
 
 import java.util.ArrayList;
 
-import demo.mosil.biz.in.ithelp.communication.R;
+import demo.mosil.biz.in.ithelp.listview.R;
 import android.os.Bundle;
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -40,15 +40,15 @@ public class Moogle2Activity extends Activity {
         mBtnBack.setOnClickListener(btnBackClick);
         
         Bundle bundle = getIntent().getExtras();
-		ArrayList<Integer> number = new ArrayList<Integer>(); 
-		for(int i = 0; i <= bundle.getInt("signal_id"); i++){
-			int no = 0;
-			do{
-				no = (int) (Math.random() * mMoogles.length);        		
-			} while(number.contains(no));
-			number.add(no);
-			mChkBoxs.get(no).setChecked(true);
-		}
+        ArrayList<Integer> number = new ArrayList<Integer>(); 
+        for(int i = 0; i <= bundle.getInt("signal_id"); i++){
+        	int no = 0;
+        	do{
+        		no = (int) (Math.random() * mMoogles.length);        		
+        	} while(number.contains(no));
+        	number.add(no);
+        	mChkBoxs.get(no).setChecked(true);
+        }
     }
 	
 	private void setView(){
@@ -124,19 +124,19 @@ public class Moogle2Activity extends Activity {
 		private View.OnClickListener btnBackClick = 
 			new View.OnClickListener() {
 				public void onClick(View v) {
-Intent intent = new Intent();
-String message = "";
-for(int i = 0; i < mChkBoxs.size(); i++){
-	if(mChkBoxs.get(i).isChecked()){
-		if(message.equals("")){
-			message = "選擇了： " + mChkBoxs.get(i).getText().toString();
-		} else {
-			message += ", " + mChkBoxs.get(i).getText().toString();
-		}
-	}
-}
-intent.putExtra("message", message);
-setResult(Number.MOOGLE2, intent);
+					Intent intent = new Intent();
+					String message = "";
+					for(int i = 0; i < mChkBoxs.size(); i++){
+						if(mChkBoxs.get(i).isChecked()){
+							if(message.equals("")){
+								message = "選擇了： " + mChkBoxs.get(i).getText().toString();
+							} else {
+								message += ", " + mChkBoxs.get(i).getText().toString();
+							}
+						}
+					}
+					intent.putExtra("message", message);
+					setResult(Number.MOOGLE2, intent);
 					finish();
 				}
 			};

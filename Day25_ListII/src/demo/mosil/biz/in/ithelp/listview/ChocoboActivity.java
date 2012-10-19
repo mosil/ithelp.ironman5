@@ -1,8 +1,8 @@
-package demo.mosil.biz.in.ithelp.communication;
+package demo.mosil.biz.in.ithelp.listview;
 
 import java.util.Locale;
 
-import demo.mosil.biz.in.ithelp.communication.R;
+import demo.mosil.biz.in.ithelp.listview.R;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -67,20 +67,19 @@ public class ChocoboActivity extends Activity {
 				}
 			}
 		};
-		
-	@Override
-	protected void onActivityResult(
-	        int requestCode, int resultCode, Intent data) {
-	    super.onActivityResult(requestCode, resultCode, data);
-	    //從回傳碼來決定要對誰做動作
-	    switch(resultCode){
-	    	case Number.MOOGLE2:
-	    		Toast.makeText(this
-	    				, data.getStringExtra("message")
-	    				, Toast.LENGTH_LONG).show();
-	    		break;
+		@Override
+	    protected void onActivityResult(
+	            int requestCode, int resultCode, Intent data) {
+	        super.onActivityResult(requestCode, resultCode, data);
+	        //從回傳碼來決定要對誰做動作
+	        switch(resultCode){
+	        	case Number.MOOGLE2:
+	        		Toast.makeText(this
+	        				, data.getStringExtra("message")
+	        				, Toast.LENGTH_LONG).show();
+	        		break;
+	        }
 	    }
-	}
 
 	private void setView() {
 		//從包裹取出傳來的內容
@@ -128,31 +127,31 @@ public class ChocoboActivity extends Activity {
         mSpnChocobo.setSelection(mSignalId);
 	}
 	
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		//設定一個選單元素，這邊的參數依序如下說明  
-	    //0: 屬於哪個選單群組  
-	    //Menu.FIRST: 選單元素的id  
-	    //0: 第幾個順位  
-	    //getResources().getString(R.string.menu_list: 選單名稱  
-	    menu.add(0, Menu.FIRST, 0, getResources().getString(R.string.menu_list))
-	    		.setIcon(android.R.drawable.ic_menu_agenda);
-	    
-	    return super.onCreateOptionsMenu(menu);
-	}
+@Override
+public boolean onCreateOptionsMenu(Menu menu) {
+	//設定一個選單元素，這邊的參數依序如下說明  
+    //0: 屬於哪個選單群組  
+    //Menu.FIRST: 選單元素的id  
+    //0: 第幾個順位  
+    //getResources().getString(R.string.menu_list: 選單名稱  
+    menu.add(0, Menu.FIRST, 0, getResources().getString(R.string.menu_list))
+    		.setIcon(android.R.drawable.ic_menu_agenda);
+    
+    return super.onCreateOptionsMenu(menu);
+}
+
+@Override
+public boolean onOptionsItemSelected(MenuItem item) {
 	
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		
-		switch(item.getItemId()){
-			//因為是id，所以要記得這時候的id，是被設定為Menu.FIRST哦！  
-			case Menu.FIRST:
-				Intent intent = new Intent(this, Moogle3Activity.class);
-				startActivity(intent);
-				finish();
-				break;
-		}
-	    //這一行一定不能少
-		return super.onOptionsItemSelected(item);
+	switch(item.getItemId()){
+		//因為是id，所以要記得這時候的id，是被設定為Menu.FIRST哦！  
+		case Menu.FIRST:
+			Intent intent = new Intent(this, Moogle3Activity.class);
+			startActivity(intent);
+			finish();
+			break;
 	}
+    //這一行一定不能少
+	return super.onOptionsItemSelected(item);
+}
 }
